@@ -7,7 +7,6 @@ let output = "";
 const calculate = (btnValue) => {
   display.focus();
   if (btnValue === "=" && output !== "") {
-    //If output has '%', replace with '/100' before evaluating.
     output = eval(output.replace(/x/g, "*"));
   } else if (btnValue === "RESET") {
     output = "";
